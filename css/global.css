@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap");
+
+:root {
+  --black: #000000;
+  --dark: #1b1c20;
+  --white: #ffffff;
+  --red: #ff0036;
+  --yellow: #ffec00;
+  --yellow-gradient: linear-gradient(180deg, #ffec00 0%, #ffc600 100%);
+
+  --color-facebook: #3b5998;
+  --color-twitter: #00aced;
+  --color-youtube: #bb0000;
+  --color-instagram: #517fa4;
+
+  --font: "Oswald", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
