@@ -13,5 +13,6 @@
 @import "components/pig-phase.css";
 
 /* Imports Andrea */
+@import "components/header.css";
 
-@import "page";
+@import "page.css";
