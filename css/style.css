@@ -3,6 +3,7 @@
 /* button */
 
 /* Imports Frank */
+@import "components/game-card.css";
 
 /* Imports Bayron */
 @import "hero.css";
