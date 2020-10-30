@@ -1,4 +1,4 @@
-.card-game {
+.game_card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,7 +6,7 @@
   padding: 0 10px;
 }
 
-.card-game__image {
+.game_card__image {
   border-radius: 25%;
   width: 100%;
   height: auto;
@@ -14,7 +14,7 @@
   margin-bottom: 15px;
 }
 
-.card-game__title {
+.game_card__title {
   font-family: var(--font);
   font-weight: 500px;
   font-size: 14px;
@@ -31,11 +31,11 @@
   margin-bottom: 20px;
 }
 
-.card-game__description {
+.game_card__description {
   display: none;
 }
 
-.card-game__readmore {
+.game_card__readmore {
   text-decoration: none;
   font-family: var(--font);
   font-weight: 400;
@@ -63,20 +63,20 @@
   .game_cards {
     background-color: yellowgreen;
     grid-template-columns: repeat(auto-fill, minmax(222px, 1fr));
-    gap: 41px 75px;
+    gap: 41px 64px;
 
     padding: 44px;
   }
-  .card-game {
+  .game_card {
     width: 280px;
     padding: 0 10px;
   }
-  .card-game__image {
+  .game_card__image {
     max-width: 222px;
     margin-bottom: 22px;
   }
 
-  .card-game__title {
+  .game_card__title {
     font-size: 20px;
     line-height: 22px;
 
@@ -84,7 +84,7 @@
     color: var(--yellow);
     margin-bottom: 22px;
   }
-  .card-game__description {
+  .game_card__description {
     font-family: var(--font);
     font-weight: 400;
     font-style: normal;
@@ -97,7 +97,7 @@
     display: inline-block;
     margin-bottom: 26px;
   }
-  .card-game__readmore {
+  .game_card__readmore {
     margin-top: 15px;
   }
 }
