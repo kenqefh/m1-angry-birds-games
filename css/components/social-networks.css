@@ -1,0 +1,66 @@
+/* Small for default */
+.icon {
+  padding: 5px;
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  display: inline-block;
+  color: var(--white);
+}
+
+.icon-facebook {
+  border: 2px solid var(--color-facebook);
+  background-color: var(--color-facebook);
+}
+.icon-facebook:hover {
+  color: var(--color-facebook);
+  background-color: var(--white);
+}
+
+.icon-twitter {
+  border: 2px solid var(--color-twitter);
+  background-color: var(--color-twitter);
+}
+.icon-twitter:hover {
+  color: var(--color-twitter);
+  background-color: var(--white);
+}
+
+.icon-youtube {
+  border: 2px solid var(--color-youtube);
+  background-color: var(--color-youtube);
+}
+.icon-youtube:hover {
+  color: var(--color-youtube);
+  background-color: var(--white);
+}
+
+.icon-instagram {
+  border: 2px solid var(--color-instagram);
+  background-color: var(--color-instagram);
+}
+.icon-instagram:hover {
+  color: var(--color-instagram);
+  background-color: var(--white);
+}
+
+.social_networks {
+  display: flex;
+  gap: 2px;
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .icon {
+    padding: 5px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .icon--large {
+    padding: 5px;
+    width: 65px;
+    height: 65px;
+  }
+}
