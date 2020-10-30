@@ -40,8 +40,8 @@
   font-family: var(--font);
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 11px;
+  line-height: 19px;
 
   color: var(--red);
   margin-top: 13px;
@@ -99,5 +99,7 @@
   }
   .game_card__readmore {
     margin-top: 15px;
+    font-size: 16px;
+    line-height: 26px;
   }
 }
