@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+}
+
+.hero__image1 {
+  height: 463px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/background01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 270vmin;
+}
+
+.hero__image2 {
+  height: 463px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/background02.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 270vmin;
+}
+
+.hero__foreground {
+  width: 258px;
+  height: 275px;
+}
+
+.divisor {
+  position: absolute;
+  width: 400px;
+  height: 54px;
+}
+
+.divisor--01 {
+  top: 435px;
+}
+
+.divisor--02 {
+  top: 900px;
+}
+
+/*
+.main {
+  position: relative;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero__image {
+  
+  width: 400px;
+  height: 100%;
+}
+
+.hero__foreground {
+  width: 258px;
+  height: 275px;
+}
+
+.divisor {
+  position: absolute;
+  width: 100vw;
+  height: 54px;
+}
+*/
