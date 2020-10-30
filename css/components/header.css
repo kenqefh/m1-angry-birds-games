@@ -1,0 +1,70 @@
+.menu {
+  position: relative;
+  z-index: 1;
+}
+.logo {
+  width: 140px;
+}
+.menu__active {
+  display: none;
+  background: var(--dark);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: var(--white);
+  list-style: none;
+}
+.menu__logo {
+  position: absolute;
+  top: 18px;
+  left: 15px;
+}
+.menu__checkbox {
+  display: none;
+}
+.menu__icon {
+  font-size: 32px;
+}
+.menu__close {
+  font-size: 32px;
+  display: none;
+  color: var(--white);
+  position: fixed;
+  z-index: 1;
+  right: 10px;
+  top: 10px;
+}
+
+.menu__checkbox:checked + label .menu__icon {
+  display: none;
+}
+.menu__checkbox:checked + label .menu__close {
+  display: block;
+}
+
+.menu__checkbox:checked ~ .menu__active {
+  opacity: 1;
+  display: block;
+}
+.menu__checkbox:checked ~ .menu__active ul {
+  margin-top: 70px;
+  text-align: center;
+  gap: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu__checkbox:checked ~ .menu__active li {
+  font-size: 20px;
+  list-style: none;
+  text-decoration: none;
+  line-height: 33px;
+  font-family: var(--font);
+}
+.menu__redes-sociales {
+  margin-top: 30px;
+}
