@@ -10,7 +10,6 @@
   border-radius: 25%;
   width: 100%;
   height: auto;
-
   margin-bottom: 15px;
 }
 
@@ -42,23 +41,21 @@
   font-style: normal;
   font-size: 11px;
   line-height: 19px;
-
   color: var(--red);
   margin-top: 13px;
 }
 
 .game_cards {
+  height: 1330px;
   background: url(../../images/background03.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 300vmin;
-  background-color: cadetblue;
+  background-size: 290vmin;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
   gap: 26px 30px;
-
   justify-items: center;
-  padding: 30px;
+  padding: 49px 30px 54.6px 30px;
 }
 
 @media only screen and (min-width: 768px) {
