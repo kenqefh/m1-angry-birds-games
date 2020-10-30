@@ -1,6 +1,7 @@
 @import "global.css";
 
 /* button */
+@import "components/button.css";
 
 /* Imports Frank */
 @import "components/game-card.css";
