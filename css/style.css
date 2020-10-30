@@ -10,6 +10,7 @@
 
 /* Imports Bayron */
 @import "components/hero.css";
+@import "components/pig-phase.css";
 
 /* Imports Andrea */
 @import "components/header.css";
