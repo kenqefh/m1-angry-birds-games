@@ -1,10 +1,12 @@
 @import "global.css";
 
 /* button */
+@import "components/button.css";
 
 /* Imports Frank */
 @import "components/game-card.css";
 @import "components/social-networks.css";
+@import "components/footer.css";
 
 /* Imports Bayron */
 @import "components/hero.css";
