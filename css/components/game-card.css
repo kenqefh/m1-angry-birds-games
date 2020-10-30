@@ -48,14 +48,15 @@
 }
 
 .game_cards {
-  /* background-image: url("images/background03.jpg"); */
-  background-color: cadetblue;
+  background: url(../../images/background03.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300vmin;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
   gap: 26px 30px;
-
   justify-items: center;
-  padding: 30px;
+  padding: 49px 30px 30px 55.6px;
 }
 
 @media only screen and (min-width: 768px) {
