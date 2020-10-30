@@ -2,3 +2,12 @@
 
 .card-container {
 }
+
+/*HEADER*/
+.header {
+  height: 60px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

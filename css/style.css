@@ -10,5 +10,6 @@
 @import "components/hero.css";
 
 /* Imports Andrea */
+@import "components/header.css";
 
-@import "page";
+@import "page.css";

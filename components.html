@@ -9,17 +9,31 @@
   <body>
     <!-- header -->
     <header class="header">
-      <nav>
-        <input type="checkbox" />
-        <label>
-          <ion-icon name="menu-outline"></ion-icon>
+      <img
+        src="images/logos/logo-ab-black.png"
+        alt="AngryBirds logo"
+        class="logo"
+      />
+
+      <nav class="menu">
+        <input id="menu_checkbox" type="checkbox" class="menu__checkbox" />
+        <label for="menu_checkbox">
+          <ion-icon class="menu__icon" name="menu"></ion-icon>
+          <ion-icon class="menu__close" name="close"></ion-icon>
         </label>
-        <ul>
-          <li>MOVIE</li>
-          <li>GAMES</li>
-          <li>ANIMATIONS</li>
-          <li>SHOP</li>
-        </ul>
+        <div class="menu__active">
+          <img
+            src="images/logos/logo-ab-white.png"
+            alt="AngryBirds Menu"
+            class="logo menu__logo"
+          />
+          <ul>
+            <li>MOVIE</li>
+            <li>GAMES</li>
+            <li>ANIMATIONS</li>
+            <li>SHOP</li>
+          </ul>
+        </div>
       </nav>
     </header>
 
