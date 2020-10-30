@@ -1,3 +1,103 @@
 .card-game {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(155px + 20px);
+  padding: 0 10px;
+}
+
+.card-game__image {
+  border-radius: 25%;
+  width: 100%;
+  height: auto;
+
+  margin-bottom: 15px;
+}
+
+.card-game__title {
+  font-family: var(--font);
+  font-weight: 500px;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-align: center;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  width: 155px;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.card-game__description {
+  display: none;
+}
+
+.card-game__readmore {
+  text-decoration: none;
+  font-family: var(--font);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: var(--red);
+  margin-top: 13px;
+}
+
+.game_cards {
+  /* background-image: url("images/background03.jpg"); */
+  background-color: cadetblue;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 26px 30px;
+
+  justify-items: center;
+  padding: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For mobile phones: */
+  .game_cards {
+    background-color: yellowgreen;
+    grid-template-columns: repeat(auto-fill, minmax(222px, 1fr));
+    gap: 41px 75px;
+
+    padding: 44px;
+  }
+  .card-game {
+    width: 280px;
+    padding: 0 10px;
+  }
+  .card-game__image {
+    max-width: 222px;
+    margin-bottom: 22px;
+  }
+
+  .card-game__title {
+    font-size: 20px;
+    line-height: 22px;
+
+    width: 240px;
+    color: var(--yellow);
+    margin-bottom: 22px;
+  }
+  .card-game__description {
+    font-family: var(--font);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+
+    max-width: 240px;
+    color: var(--white);
+    display: inline-block;
+    margin-bottom: 26px;
+  }
+  .card-game__readmore {
+    margin-top: 15px;
+  }
 }
