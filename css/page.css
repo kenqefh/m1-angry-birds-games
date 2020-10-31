@@ -1,3 +1,4 @@
+/* Page settings */
 .body {
   background-image: url(../images/background03.jpg);
   background-position: center;
@@ -9,6 +10,7 @@
   max-width: 1920px;
   margin: 0 auto;
 }
+/* END Page settings */
 
 /*HEADER*/
 .header {
@@ -21,6 +23,7 @@
   background-color: var(--white);
 }
 
+/* Divider */
 .divider {
   position: relative;
   width: 100%;
@@ -44,6 +47,7 @@
   object-fit: cover;
   transform: translateY(-95%);
 }
+/* END Divider */
 
 @media screen and (min-width: 1200px) {
   .header {
@@ -52,17 +56,6 @@
   /*menu*/
 
   /*Hero*/
-
-  .hero__image1 {
-    height: 600px;
-    background-size: cover;
-  }
-
-  .hero__image2 {
-    height: 600px;
-    background-size: cover;
-  }
-
   .hero__foreground-1 {
     width: 497px;
     height: 427px;

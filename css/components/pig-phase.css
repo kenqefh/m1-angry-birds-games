@@ -7,8 +7,12 @@
   object-fit: cover;
 }
 
-@media only screen and (min-width: 768px) {
+/**
+ * Un media query intermedio para que no exista un cambio fuerte de 200px a 325px
+ * en el contenedor de cerditos.
+ */
+@media only screen and (min-width: 992px) {
   .pig {
-    height: 325px;
+    height: 275px;
   }
 }
