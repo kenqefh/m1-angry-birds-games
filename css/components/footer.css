@@ -31,12 +31,18 @@
   justify-content: center;
   gap: 16px 33px;
 }
+
 .footer__social-networks {
   margin: 36px auto;
 }
 .footer__logo {
   height: 33px;
   margin-bottom: 5px;
+  
+}
+
+.footer__logo:hover {
+  transform: scale(1.05);
 }
 
 .footer__rights {
