@@ -1,3 +1,16 @@
+.game_cards {
+  background-image: url(../../images/background03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+  gap: 26px 30px;
+  justify-items: center;
+  padding: 49px 30px 55px;
+}
+
 .game_card {
   display: flex;
   flex-direction: column;
@@ -54,24 +67,6 @@
 .game_card__readmore:hover {
   transform: translateX(0.25px);
   color: var(--white);
-}
-
-.game_cards {
-  /* height: 1330px; */
-  /* background: url(../../images/background03.jpg); */
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
-  /* background-size: 290vmin; */
-  background-image: url(../../images/background03.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
-  gap: 26px 30px;
-  justify-items: center;
-  padding: 49px 30px 55px;
 }
 
 @media only screen and (min-width: 768px) {
