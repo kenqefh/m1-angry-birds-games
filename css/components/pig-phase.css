@@ -7,16 +7,21 @@
   background: url(../../images/background04.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   /* background-size: 245vmin; */
 }
 
-.divisor-pig {
-  position: absolute;
-  height: 5px;
-  /* width: 300vmin; */
+.cerdito {
+  height: 200px;
+}
+.cerdito > img {
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
-.divisor-pig--02 {
-  top: 195px;
+@media only screen and (min-width: 768px) {
+  .cerdito {
+    height: 325px;
+  }
 }
