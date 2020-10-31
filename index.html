@@ -7,14 +7,715 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Header -->
+     <!-- header -->
+    <header class="header">
+      <img
+        src="images/logos/logo-ab-black.png"
+        alt="AngryBirds logo"
+        class="logo"
+      />
 
-    <!-- Heros -->
+      <nav class="menu">
+        <input id="menu_checkbox" type="checkbox" class="menu__checkbox" />
+        <label for="menu_checkbox">
+          <ion-icon class="menu__icon" name="menu"></ion-icon>
+          <ion-icon class="menu__close" name="close"></ion-icon>
+        </label>
+        <div class="menu__active">
+          <img
+            src="images/logos/logo-ab-white.png"
+            alt="AngryBirds Menu"
+            class="logo menu__logo"
+          />
+          <ul>
+            <li>MOVIE</li>
+            <li>GAMES</li>
+            <li>ANIMATIONS</li>
+            <li>SHOP</li>
+          </ul>
+            <div class="menu__redes-sociales social_networks">
+              <!-- Icon Facebook -->
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="facebook-f"
+                class="svg-inline--fa fa-facebook-f fa-w-10 icon icon-facebook"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                ></path>
+              </svg>
+
+              <!-- Icon twitter -->
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="twitter"
+                class="svg-inline--fa fa-twitter fa-w-16 icon icon-twitter"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                ></path>
+              </svg>
+
+              <!-- Icon Youtube -->
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="youtube"
+                class="svg-inline--fa fa-youtube fa-w-18 icon icon-youtube"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 576 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                ></path>
+              </svg>
+
+              <!-- Icon Instagram --><svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fab"
+                data-icon="instagram"
+                class="svg-inline--fa fa-instagram fa-w-14 icon icon-instagram"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  fill="currentColor"
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+      </nav>
+    </header>
+    <!---->
+    
+  <!--MAIN--> 
+  <main>
+    <!-- HERO -->
+    <div class="hero-container">
+      <!--hero1-->
+      <section class="hero">
+        <div class="hero__image1">
+          <img class="hero__foreground-1" src="images/foreground1.png" alt="Angry birds2 with download button">
+          <a class="button" href="#">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--left"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+            <span class="button__text">Download now!</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <!---->
+
+      <!--Divisor1-->
+      <div>
+        <img class="divisor-hero divisor-hero--01" src="images/divisor01.png" alt="Row of light blue leafs across the screen">
+      </div>
+      <!---->
+
+      <!--Hero 2-->
+      <section class="hero">
+        <div class="hero__image2">
+          <img class="hero__foreground-2" src="images/foreground2.png" alt="Angry birs friends with button play now">
+          <a class="button" href="#">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--left"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+            <span class="button__text">Play now!</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <!---->
+
+      <!--Divisor2-->
+      <div>
+        <img class="divisor-hero divisor-hero--02" src="images/divisor02.png" alt="Row of black leafs across the screen">
+      </div>
+      <!---->
+    </div>
+    <!---->
 
     <!-- cards -->
+    <section class="card-container">
+      <!-- card component -->
+      <div class="game_cards">
+        <!-- game_card 1 -->
+        <div class="game_card">
+          <img
+            class="game_card__image"
+            src="images/games/game1.jpg"
+            alt="Image game 1"
+          />
+          <h4 class="game_card__title">Angry Birds Dream Blast</h4>
+          <p class="game_card__description">
+            Life is a bubble-popping dream in a new puzzle game with a gameplay
+            style never-before-seen in an Angry Birds game.
+          </p>
+          <a class="button" href="#">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--left"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+            <span class="button__text">Download</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+          </a>
+          <a class="game_card__readmore" href="#">Read more...</a>
+        </div>
+        <!-- END game_card -->
 
-    <!-- pigs -->
+        <!-- game_card 2 -->
 
-    <!-- Footer -->
+        <div class="game_card">
+          <img
+            class="game_card__image"
+            src="images/games/game2.jpg"
+            alt="Image game 2"
+          />
+          <h4 class="game_card__title">Angry Birds 2</h4>
+          <p class="game_card__description">
+            Bigger. Badder. Birdier. The Angry Birds are back in the sequel to
+            the biggest mobile game of all time!
+          </p>
+          <a class="button" href="#">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--left"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+            <span class="button__text">Download</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+          </a>
+          <a class="game_card__readmore" href="#">Read more...</a>
+        </div>
+        <!-- END game_card -->
+
+        <!-- game_card 3 -->
+        <div class="game_card">
+          <img
+            class="game_card__image"
+            src="images/games/game3.jpg"
+            alt="Image game 3"
+          />
+          <h4 class="game_card__title">Angry Birds Match</h4>
+          <p class="game_card__description">
+            Match stuff with the adorable Hatchlings from the Angry Birds Movie,
+            collect cute outfits, and get the party started!
+          </p>
+          <a class="button" href="#">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--left"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+            <span class="button__text">Download</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+          </a>
+          <a class="game_card__readmore" href="#">Read more...</a>
+        </div>
+        <!-- END game_card -->
+
+        <!-- game_card 4 -->
+        <div class="game_card">
+          <img
+            class="game_card__image"
+            src="images/games/game4.jpg"
+            alt="Image game 4"
+          />
+          <h4 class="game_card__title">Angry Birds Friends</h4>
+          <p class="game_card__description">
+            Challenge your friends, and the world, in a new tournament of six
+            new levels every week.
+          </p>
+          <a class="button" href="#">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--left"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+            <span class="button__text">Download</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+          </a>
+          <a class="game_card__readmore" href="#">Read more...</a>
+        </div>
+        <!-- END game_card -->
+
+        <!-- game_card 5 -->
+        <div class="game_card">
+          <img
+            class="game_card__image"
+            src="images/games/game5.jpg"
+            alt="Image game 5"
+          />
+          <h4 class="game_card__title">Angry Birds Evolution</h4>
+          <p class="game_card__description">
+            Collect and evolve over 100 new crazy and colorful Angry Birds,
+            assemble a powerful team, and stop the pigs.
+          </p>
+          <a class="button" href="#">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--left"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+            <span class="button__text">Download</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+          </a>
+          <a class="game_card__readmore" href="#">Read more...</a>
+        </div>
+        <!-- END game_card -->
+
+        <!-- game_card 6 -->
+        <div class="game_card">
+          <img
+            class="game_card__image"
+            src="images/games/game6.jpg"
+            alt="Image game 6"
+          />
+          <h4 class="game_card__title">Angry Birds Blast</h4>
+          <p class="game_card__description">
+            The most instantly satisfying Angry Birds game ever. Tap matching
+            balloons to blast the birds to freedom!
+          </p>
+          <a class="button" href="#">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--left"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+            <span class="button__text">Download</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+          </a>
+          <a class="game_card__readmore" href="#">Read more...</a>
+        </div>
+        <!-- END game_card -->
+
+        <!-- game_card 7 -->
+        <div class="game_card">
+          <img
+            class="game_card__image"
+            src="images/games/game7.jpg"
+            alt="Image game 7"
+          />
+          <h4 class="game_card__title">Angry Birds POP</h4>
+          <p class="game_card__description">
+            Use your trusty slingshot to match and pop colorful bubbles, save
+            exotic critters, and pop the piggies.
+          </p>
+          <a class="button" href="#">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--left"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+            <span class="button__text">Download</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+          </a>
+          <a class="game_card__readmore" href="#">Read more...</a>
+        </div>
+        <!-- END game_card -->
+
+        <!-- game_card 8 -->
+        <div class="game_card">
+          <img
+            class="game_card__image"
+            src="images/games/game8.jpg"
+            alt="Image game 8"
+          />
+          <h4 class="game_card__title">Angry Birds Transformers</h4>
+          <p class="game_card__description">
+            The eggs have sprouted legs, and are transformerizing everything in
+            sight! Is this the end for Piggy Island?
+          </p>
+          <a class="button" href="#">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--left"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+            <span class="button__text">Download</span>
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="arrow-circle-down"
+              class="svg-inline--fa fa-arrow-circle-down fa-w-16 button__icon button__icon--right"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-143.6-28.9L288 302.6V120c0-13.3-10.7-24-24-24h-16c-13.3 0-24 10.7-24 24v182.6l-72.4-75.5c-9.3-9.7-24.8-9.9-34.3-.4l-10.9 11c-9.4 9.4-9.4 24.6 0 33.9L239 404.3c9.4 9.4 24.6 9.4 33.9 0l132.7-132.7c9.4-9.4 9.4-24.6 0-33.9l-10.9-11c-9.5-9.5-25-9.3-34.3.4z"
+              ></path>
+            </svg>
+          </a>
+          <a class="game_card__readmore" href="#">Read more...</a>
+        </div>
+        <!-- END game_card -->
+      </div>
+      <!-- END card component -->
+    </section>
+    <!-- END card Section-->
+ 
+     <!-- PIGS component  -->
+    <div class="pig-container">
+      <section class="pig">
+        <div>
+          <img class="divisor-pig divisor-pig--01" src="images/divisor03.png" alt="Little black waves as divisor">
+        </div>
+
+        <div>
+          <img class="divisor-pig divisor-pig--02" src="images/divisor04.png" alt="Little black waves as divisor">
+        </div>
+      </section>
+    </div>
+     <!---->
+  </main>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer__links">
+        <a class="footer__text footer__text--large" href="#">blog</a>
+        <a class="footer__text footer__text--large" href="#">support</a>
+        <a class="footer__text footer__text--large" href="#">rovio.com</a>
+        <a class="footer__text footer__text--large" href="#">bring the anger</a>
+      </div>
+      <!-- Redes sociales -->
+      <div class="social_networks footer__social-networks">
+        <!-- Icon Facebook -->
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="facebook-f"
+          class="svg-inline--fa fa-facebook-f fa-w-10 icon icon-facebook icon--large"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+        >
+          <path
+            fill="currentColor"
+            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+          ></path>
+        </svg>
+
+        <!-- Icon twitter -->
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="twitter"
+          class="svg-inline--fa fa-twitter fa-w-16 icon icon-twitter icon--large"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="currentColor"
+            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+          ></path>
+        </svg>
+
+        <!-- Icon Youtube -->
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="youtube"
+          class="svg-inline--fa fa-youtube fa-w-18 icon icon-youtube icon--large"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 576 512"
+        >
+          <path
+            fill="currentColor"
+            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+          ></path>
+        </svg>
+
+        <!-- Icon Instagram --><svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="instagram"
+          class="svg-inline--fa fa-instagram fa-w-14 icon icon-instagram icon--large"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+          ></path>
+        </svg>
+      </div>
+      <!-- END Redes sociales -->
+
+      <img
+        class="footer__logo"
+        src="images/logos/logo-ab-white.png"
+        alt="Angry Birds white logo"
+      />
+      <div class="footer__rights">
+        <p class="footer__text footer__text--small">
+          © 2009 - 2020 Rovio Entertainment Corporation. All rights Reserved.
+        </p>
+        <a class="footer__text footer__text--small" href="#">Privacy policy.</a>
+        <a class="footer__text footer__text--small" href="#">EULA.</a>
+      </div>
+    </footer>
+    <!-- END footer -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   </body>
 </html>

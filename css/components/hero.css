@@ -26,8 +26,13 @@
   background-size: 270vmin;
 }
 
-.hero__foreground {
+.hero__foreground-1 {
   width: 258px;
+  height: 275px;
+}
+
+.hero__foreground-2 {
+  width: 293px;
   height: 275px;
 }
 

@@ -6,3 +6,63 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (min-width: 1200px) {
+  /*menu*/
+
+  /*Hero*/
+
+  .hero__image1 {
+    height: 600px;
+    background-size: cover;
+  }
+
+  .hero__image2 {
+    height: 600px;
+    background-size: cover;
+  }
+
+  .hero__foreground-1 {
+    width: 497px;
+    height: 427px;
+  }
+
+  .hero__foreground-2 {
+    width: 545px;
+    height: 409px;
+  }
+
+  .divisor-hero {
+    width: 100vw;
+    height: 163px;
+  }
+
+  .divisor-hero--01 {
+    top: 520px;
+  }
+
+  .divisor-hero--02 {
+    top: 1120px;
+  }
+
+  .game_cards {
+    height: 1330px;
+    background-size: cover; 
+  }
+
+  .pig {
+    height: 325px;
+    background-size: 133%;
+  }
+
+  .divisor-pig {
+    position: absolute;
+    height: 5px;
+    width: 100vw;
+  }
+
+  .divisor-pig--02 {
+    top: 99%;
+  }
+
+}
