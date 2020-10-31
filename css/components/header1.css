@@ -1,0 +1,70 @@
+.menu {
+  position: relative;
+  z-index: 1;
+}
+.hamburger {
+  width: 60px;
+  height: 45px;
+  display: block;
+  position: relative;
+  margin: 50px auto;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: var(--black);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25 ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.hamburger span:nth-child(2) {
+  top: 18px;
+  transform-origin: left center;
+}
+
+.hamburger span:nth-child(3) {
+  top: 36px;
+  transform-origin: left center;
+}
+
+input[type="checkbox"]:checked + .hamburger span:nth-child(1) {
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+input[type="checkbox"]:checked + .hamburger span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+input[type="checkbox"]:checked + .hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}
+
+.menu ul {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--black);
+  color: var(--white);
+  list-style: none;
+}
