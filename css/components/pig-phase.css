@@ -1,0 +1,22 @@
+.pig-container {
+  position: relative;
+}
+
+.pig {
+  height: 200px;
+  background: url(../../images/background04.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: 245vmin; */
+}
+
+.divisor-pig {
+  position: absolute;
+  height: 5px;
+  /* width: 300vmin; */
+  width: 100%;
+}
+
+.divisor-pig--02 {
+  top: 195px;
+}
