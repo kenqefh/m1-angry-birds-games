@@ -11,7 +11,7 @@
   background: url(../../images/background01.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 270vmin;
+  background-size: cover;
 }
 
 .hero__image2 {
@@ -23,7 +23,7 @@
   background: url(../../images/background02.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 270vmin;
+  background-size: cover;
 }
 
 .hero__foreground-1 {
@@ -36,16 +36,12 @@
   height: 275px;
 }
 
-.divisor-hero {
-  position: absolute;
-  width: 100vw;
-  height: 54px;
-}
+@media only screen and (min-width: 768px) {
+  .hero__image2 {
+    height: 600px;
+  }
 
-.divisor-hero--01 {
-  top: 435px;
-}
-
-.divisor-hero--02 {
-  top: 900px;
+  .hero__image1 {
+    height: 600px;
+  }
 }

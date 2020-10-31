@@ -1,22 +1,18 @@
-.pig-container {
-  position: relative;
-}
-
 .pig {
   height: 200px;
-  background: url(../../images/background04.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  /* background-size: 245vmin; */
 }
-
-.divisor-pig {
-  position: absolute;
-  height: 5px;
-  /* width: 300vmin; */
+.pig__image {
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
-.divisor-pig--02 {
-  top: 195px;
+/**
+ * Un media query intermedio para que no exista un cambio fuerte de 200px a 325px
+ * en el contenedor de cerditos.
+ */
+@media only screen and (min-width: 992px) {
+  .pig {
+    height: 275px;
+  }
 }
