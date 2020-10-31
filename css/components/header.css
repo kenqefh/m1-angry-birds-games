@@ -92,30 +92,22 @@
     font-size: 20px;
     line-height: 33px;
   }
+  .menu ul li:hover {
+    /* height: 100%; */
+    color: var(--white);
+    background-color: var(--black);
+    padding: 14px;
+    text-decoration-line: underline;
+    transition: all 100ms ease;
+  }
   .redes-sociales {
     margin-left: calc(50vw / 3);
+    pointer-events: none;
   }
-  .menu ul li:hover {
-    height: 100%;
-    color: var(--white);
-    background: var(--black);
-    padding: 30px 25px;
-    text-decoration-line: underline;
-    transition: all 300ms ease;
+
+  .logo:hover {
+    transform: scale(1.05);
   }
-  /* .menu ul li::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: var(--black);
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    transition: all 300ms ease;
-  }
-  .menu ul li:hover::after {
-    width: 100%;
-  } */
 }
 
 @keyframes fadein {
