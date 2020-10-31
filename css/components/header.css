@@ -14,7 +14,7 @@
   left: 15px;
   opacity: 0;
 }
-.menu ul {
+.navbar {
   display: none;
   position: fixed;
   top: 0;
@@ -25,6 +25,13 @@
   color: var(--white);
   list-style: none;
   font-family: var(--font);
+}
+.navbar__center {
+  list-style: none;
+  text-align: center;
+}
+.navbar__bottom {
+  list-style: none;
 }
 
 .menu__checkbox {
@@ -53,7 +60,7 @@
   display: block;
 }
 
-.menu__checkbox:checked ~ ul {
+.menu__checkbox:checked ~ .navbar {
   display: flex;
   opacity: 0;
   flex-direction: column;
@@ -63,47 +70,75 @@
   animation: fadein 300ms ease-in 100ms forwards;
 }
 
-.menu__checkbox:checked ~ ul li {
+.menu__checkbox:checked ~ .navbar__center li {
   font-size: 32px;
 }
+
+.menu__checkbox:checked ~ .navbar__bottom li {
+  flex-direction: row;
+}
+
 .menu__checkbox:checked ~ img {
   opacity: 1;
   transition: all 300ms ease-in 50ms;
 }
-@media screen and (min-width: 1025px) {
-  .header {
-    height: 90px;
-  }
+@media screen and (min-width: 1200px) {
   .menu__label {
     display: none;
   }
-  .menu ul {
+  /* .menu {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  } */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    background: none;
+    /* float: left;
+    padding: 0;
+    line-height: inherit; */
+  }
+  .navbar__center {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    gap: 30px;
+  }
+
+  .navbar__bottom {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-    background: none;
-    gap: 25px;
-    color: var(--black);
+    justify-content: center;
   }
-  .menu ul li {
+  .navbar__center li {
+    display: inline;
     position: relative;
     font-size: 20px;
     line-height: 33px;
+    color: var(--black);
   }
-  .menu ul li:hover {
+  .navbar__bottom li {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    line-height: 33px;
+    top: 1em;
+    left: 17em;
+  }
+  .navbar__center li:hover {
     /* height: 100%; */
     color: var(--white);
     background-color: var(--black);
-    padding: 14px;
+    padding: 30px;
     text-decoration-line: underline;
-    transition: all 100ms ease;
+    transition: all 300ms ease;
   }
-  .redes-sociales {
+  /* .redes-sociales {
     margin-left: calc(50vw / 3);
     pointer-events: none;
-  }
+  } */
 
   .logo:hover {
     transform: scale(1.05);
