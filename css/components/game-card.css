@@ -11,6 +11,11 @@
   width: 100%;
   height: auto;
   margin-bottom: 15px;
+
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.game_card__image:hover {
+  transform: scale(calc(243 / 222));
 }
 
 .game_card__title {
@@ -43,19 +48,30 @@
   line-height: 19px;
   color: var(--red);
   margin-top: 13px;
+
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.game_card__readmore:hover {
+  transform: translateX(0.25px);
+  color: var(--white);
 }
 
 .game_cards {
-  height: 1330px;
-  background: url(../../images/background03.jpg);
-  background-repeat: no-repeat;
+  /* height: 1330px; */
+  /* background: url(../../images/background03.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: 290vmin; */
+  background-image: url(../../images/background03.jpg);
   background-position: center;
-  background-size: 290vmin;
+  background-repeat: no-repeat;
+  background-size: cover;
+
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
   gap: 26px 30px;
   justify-items: center;
-  padding: 49px 30px 54.6px 30px;
+  padding: 49px 30px 55px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -63,9 +79,9 @@
   .game_cards {
     background-color: yellowgreen;
     grid-template-columns: repeat(auto-fill, minmax(222px, 1fr));
-    gap: 41px 64px;
+    gap: 42px 76px;
 
-    padding: 44px;
+    padding: 80px 50px;
   }
   .game_card {
     width: 280px;
