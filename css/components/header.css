@@ -45,8 +45,9 @@
 }
 
 .menu__checkbox:checked ~ .menu__active {
-  opacity: 1;
+  opacity: 0;
   display: block;
+  animation: fadein 300ms ease-in 200ms forwards;
 }
 .menu__checkbox:checked ~ .menu__active ul {
   margin-top: 70px;
@@ -67,4 +68,49 @@
 }
 .menu__redes-sociales {
   margin-top: 30px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translate(50%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@media screen and (min-width: 760px) {
+  .menu__label {
+    display: none;
+  }
+  .menu__active {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: none;
+    width: initial;
+    height: initial;
+    opacity: 1;
+  }
+  .menu__active img {
+    display: none;
+  }
+  .menu__active ul {
+    /* position: relative; */
+    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    color: var(--black);
+  }
+
+  .menu__active ul li {
+    font-size: 16px;
+  }
+  .menu__redes-sociales {
+    margin: auto;
+  }
+  .menu__checkbox:checked .menu__active {
+    display: none;
+  }
 }
