@@ -1,27 +1,14 @@
-.pig-container {
-  position: relative;
-}
-
 .pig {
   height: 200px;
-  background: url(../../images/background04.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  /* background-size: 245vmin; */
 }
-
-.cerdito {
-  height: 200px;
-}
-.cerdito > img {
+.pig__image {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {
-  .cerdito {
+  .pig {
     height: 325px;
   }
 }
