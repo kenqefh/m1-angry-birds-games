@@ -14,7 +14,9 @@
   left: 15px;
   opacity: 0;
 }
-.menu ul {
+
+.menu_bar,
+.menu_list {
   display: none;
   position: fixed;
   top: 0;
