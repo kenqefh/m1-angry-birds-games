@@ -3,12 +3,12 @@
   text-decoration: none;
   border-radius: 10px;
   padding: 10px 26px;
-
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
-
+  z-index: 10;
   background: var(--yellow-gradient);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15),
     inset 0px 1px 0px rgba(255, 255, 255, 0.75);
@@ -37,19 +37,26 @@
 }
 .button:hover > .button__icon--right {
   display: inline;
+  animation-name: jump;
+  animation-duration: 500ms;
+  /* animation-delay: 100ms; */
 }
 .button:hover > .button__icon--left {
-  display: none;
+  animation-name: down;
+  animation-duration: 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .button:hover {
   background: var(--yellow);
   box-shadow: none;
+  padding: 10px 30px;
 }
 
 @media only screen and (min-width: 768px) {
   .button {
-    padding: 12px 30px;
+    padding: 12px 15px;
   }
 
   .button__text {
@@ -60,5 +67,21 @@
   .button__icon {
     width: 20px;
     height: 20px;
+  }
+}
+@keyframes jump {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(-0px);
+  }
+}
+@keyframes down {
+  from {
+    transform: translateY(-0px);
+  }
+  to {
+    transform: translateY(50px);
   }
 }
