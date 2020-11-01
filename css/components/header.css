@@ -9,7 +9,7 @@
   display: flex;
 }
 
-.menu img {
+.logo--white {
   display: inline-block;
   position: fixed;
   z-index: 100;
@@ -94,12 +94,17 @@
   gap: 19px;
 }
 
-.menu__checkbox:checked ~ .menu img {
+.menu__checkbox:checked ~ .logo--white {
   opacity: 1;
+  transition: all 550ms ease-in-out 150ms;
 }
 
 /* Desktop view */
 @media screen and (min-width: 1200px) {
+  .logo--white {
+    opacity: 0;
+  }
+
   .menu {
     position: relative;
     z-index: 20;
