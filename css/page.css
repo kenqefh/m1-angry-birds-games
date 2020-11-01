@@ -15,8 +15,9 @@
 /*HEADER*/
 .header {
   height: 60px;
-  padding: 0px 15px;
+  padding: 0px 30px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 

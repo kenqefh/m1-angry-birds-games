@@ -4,8 +4,14 @@
 
 .menu {
   position: relative;
-  z-index: 1;
+  z-index: 20;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
 }
+
 .menu img {
   display: inline-block;
   position: fixed;
@@ -14,6 +20,7 @@
   left: 15px;
   opacity: 0;
 }
+
 .navbar {
   display: none;
   position: fixed;
@@ -26,12 +33,20 @@
   list-style: none;
   font-family: var(--font);
 }
+
 .navbar__center {
   list-style: none;
   text-align: center;
 }
+
 .navbar__bottom {
+  display: flex;
+  flex-direction: row;
   list-style: none;
+}
+
+.social__networks {
+  display: none;
 }
 
 .menu__checkbox {
@@ -74,15 +89,33 @@
   font-size: 32px;
 }
 
-.menu__checkbox:checked ~ .navbar__bottom li {
+.menu__checkbox:checked .navbar__bottom li {
+  display: block;
   flex-direction: row;
 }
+
+.menu__checkbox:checked .navbar__bottom lu {
+  margin-bottom: 29.5px;
+}
+
+
+
 
 .menu__checkbox:checked ~ img {
   opacity: 1;
   transition: all 300ms ease-in 50ms;
 }
 @media screen and (min-width: 1200px) {
+  .menu {
+    position: relative;
+    z-index: 20;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+
   .menu__label {
     display: none;
   }
@@ -92,9 +125,10 @@
     z-index: 2;
   } */
   .navbar {
+    position: relative;
+    z-index: 2;
     display: flex;
     justify-content: center;
-    z-index: 2;
     background: none;
     /* float: left;
     padding: 0;
@@ -102,16 +136,25 @@
   }
   .navbar__center {
     display: flex;
+    align-self: center;
     align-items: center;
     height: 90px;
     gap: 30px;
   }
 
   .navbar__bottom {
+    display: none;
+  }
+
+  .social__networks {
+    position: relative;
+    top: 23px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    
+    list-style-type: none;
   }
+
   .navbar__center li {
     display: inline;
     position: relative;
@@ -119,14 +162,7 @@
     line-height: 33px;
     color: var(--black);
   }
-  .navbar__bottom li {
-    display: inline-block;
-    position: relative;
-    font-size: 20px;
-    line-height: 33px;
-    top: 1em;
-    left: 17em;
-  }
+
   .navbar__center li:hover {
     /* height: 100%; */
     color: var(--white);
