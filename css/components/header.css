@@ -167,18 +167,22 @@
     line-height: 33px;
     top: 1em;
   }
+
   .navbar__center li:hover {
-    /* height: 100%; */
+    cursor: pointer;
+  }
+  .navbar__center li.navbar__item--selected {
+    cursor: default;
+  }
+
+  .navbar__center li:hover,
+  .navbar__center li.navbar__item--selected {
     color: var(--white);
     background-color: var(--black);
     padding: 28px;
     text-decoration-line: underline;
     transition: all 300ms ease;
   }
-  /* .redes-sociales {
-    margin-left: calc(50vw / 3);
-    pointer-events: none;
-  } */
 
   .logo:hover {
     transform: scale(1.05);
